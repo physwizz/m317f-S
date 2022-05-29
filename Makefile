@@ -312,11 +312,12 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH		?=arm64
 
-# CROSS_COMPILE	?=$(srctree)/toolchain/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+CROSS_COMPILE	?=$(srctree)/toolchain/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 
 
-CROSS_COMPILE=/home/grahame/toolchains/Toolchains-for-Eureka-GCC-4.9/bin/aarch64-linux-android-
+# CROSS_COMPILE=/home/grahame/toolchains/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+
 
 
 # Architecture as present in compile.h
@@ -380,11 +381,11 @@ AS		= $(CROSS_COMPILE)as
 LD		= $(CROSS_COMPILE)ld
 LDGOLD		= $(CROSS_COMPILE)ld.gold
 
-# CC		= $(srctree)/toolchain/clang/host/linux-x86/clang-4639204/bin/clang
+CC		= $(srctree)/toolchain/clang/host/linux-x86/clang-4639204/bin/clang
 
 
 
-CC=/home/grahame/toolchains/prebuilts_clang_host_linux-x86_clang-4639204-master/bin/clang
+# CC=/home/grahame/toolchains/prebuilts_clang_host_linux-x86_clang-4639204-master/bin/clang
 
 
 CPP		= $(CC) -E
