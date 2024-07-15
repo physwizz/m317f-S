@@ -7,4 +7,4 @@ export ANDROID_MAJOR_VERSION=s
 export PLATFORM_VERSION=12
 
 make physwizz_defconfig
-make -j64
+make 
